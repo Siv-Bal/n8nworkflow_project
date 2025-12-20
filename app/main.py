@@ -61,9 +61,12 @@ def health():
     ),
 )
 def ingest():
-    ingest_youtube_workflows("US", 10)
-    ingest_youtube_workflows("IN", 10)
-    return {"status": "ingestion completed"}
+    try:
+        ingest_youtube_workflows("US", 10)
+        ingest_youtube_workflows("IN", 10)
+        return {"status": "ingestion completed (YouTube may be skipped if quota exceeded)"}
+    except Exception as e:
+        return {"status": "partial failure", "error": str(e)}
 
 
 # --------------------------------------------------
@@ -86,4 +89,5 @@ def list_workflows(
     db: Session = Depends(get_db),
 ):
     return get_workflows(db, platform, country, limit)
+
 
