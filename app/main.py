@@ -5,6 +5,7 @@ from app.database import SessionLocal
 from app.crud import get_workflows
 from app.schemas import WorkflowOut
 from fetcher.youtube_fetcher import ingest_youtube_workflows
+from app.database import engine, Base
 
 # --------------------------------------------------
 # App Setup
@@ -17,6 +18,9 @@ app = FastAPI(
     ),
     version="1.0.0",
 )
+@app.on_event("startup")
+def startup_event():
+    Base.metadata.create_all(bind=engine)
 
 
 # --------------------------------------------------
@@ -82,3 +86,4 @@ def list_workflows(
     db: Session = Depends(get_db),
 ):
     return get_workflows(db, platform, country, limit)
+
