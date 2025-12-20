@@ -95,7 +95,12 @@ def search_videos(query: str, country: str, max_results: int):
             "key": YOUTUBE_API_KEY,
         },
         timeout=TIMEOUT,
+        
     )
+    if r.status_code in (403, 429):
+            print("YouTube quota exceeded or access denied. Skipping YouTube ingestion.")
+            return []
+        
     r.raise_for_status()
     return r.json().get("items", [])
 
@@ -218,3 +223,4 @@ def ingest_youtube_workflows(country="US", max_results=10):
 if __name__ == "__main__":
     ingest_youtube_workflows(country="US", max_results=10)
     ingest_youtube_workflows(country="IN", max_results=10)
+
