@@ -37,7 +37,7 @@ WHAT MAKES THIS PROJECT UNIQUE AND CREATIVE
 PROJECT ARCHITECTURE
 
 n8nworkflow_project/
-|
+
 |-- app/
 | |-- main.py (FastAPI entrypoint)
 | |-- database.py (Database engine and session)
@@ -46,12 +46,12 @@ n8nworkflow_project/
 | |-- crud.py (Database logic and trend computation)
 | |-- scoring.py (Scoring and explanation logic)
 | |-- init_db.py (Database initialization)
-|
+
 |-- fetcher/
 | |-- youtube_fetcher.py
 | |-- forum_fetcher.py
 | |-- google_trends.py 
-|
+
 |-- requirements.txt
 |-- .env.example
 |-- .gitignore
