@@ -39,18 +39,18 @@ PROJECT ARCHITECTURE
 n8nworkflow_project/
 
 |-- app/
-| |-- main.py (FastAPI entrypoint)
-| |-- database.py (Database engine and session)
-| |-- models.py (SQLAlchemy models)
-| |-- schemas.py (Pydantic schemas)
-| |-- crud.py (Database logic and trend computation)
-| |-- scoring.py (Scoring and explanation logic)
-| |-- init_db.py (Database initialization)
+ |-- main.py (FastAPI entrypoint)
+ |-- database.py (Database engine and session)
+ |-- models.py (SQLAlchemy models)
+ |-- schemas.py (Pydantic schemas)
+ |-- crud.py (Database logic and trend computation)
+ |-- scoring.py (Scoring and explanation logic)
+ |-- init_db.py (Database initialization)
 
 |-- fetcher/
-| |-- youtube_fetcher.py
-| |-- forum_fetcher.py
-| |-- google_trends.py 
+ |-- youtube_fetcher.py
+ |-- forum_fetcher.py
+ |-- google_trends.py 
 
 |-- requirements.txt
 |-- .env.example
