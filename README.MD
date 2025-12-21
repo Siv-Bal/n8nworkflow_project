@@ -89,7 +89,7 @@ SETUP AND INSTALLATION
       http://127.0.0.1:8000/docs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ALIGNMENT WITH REQUIRED DELIVERABLES
-    * Trustworthy, source-verifiable data
+    * Trustworthy, source-verifiable data 
     * Computed metrics beyond raw scraping
     * Historical trend logic
     * Production-safe API design
