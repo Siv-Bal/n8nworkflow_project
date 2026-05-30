@@ -14,7 +14,6 @@ KEY HIGHLIGHTS
   * Production-ready REST API
   * Graceful handling of external API failures (quota limits, downtime)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WHAT MAKES THIS PROJECT UNIQUE AND CREATIVE
 
 1.Historical Trend Detection 
   Trends are not inferred from popularity or keywords.
@@ -88,12 +87,6 @@ SETUP AND INSTALLATION
     Swagger UI:
       http://127.0.0.1:8000/docs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ALIGNMENT WITH REQUIRED DELIVERABLES
-    * Trustworthy, source-verifiable data 
-    * Computed metrics beyond raw scraping
-    * Historical trend logic
-    * Production-safe API design
-    * Clear documentation of approach
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
